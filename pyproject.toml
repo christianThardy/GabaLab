@@ -1,5 +1,5 @@
 [project]
-name = "gaba-lab"
+name = "gaba"
 version = "0.1.0"
 description = "Mechanistic interpretability tool for analyzing suppression and alignment behavior in transformer models"
 authors = [{ name="Christian Hardy", email="christianth.to@gmail.com" }]

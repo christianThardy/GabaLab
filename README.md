@@ -46,16 +46,16 @@ model_specs = {
         (30, 2, "Late Layer, Early Head")
     ],
     "meta-llama/Meta-Llama-3-8B": [
-        (31, 14, "ToM Suppressor"),
-        (30, 31, "Terminal Head")
+        (25, 15, "Late Layer, Late Head"),
+        (27, 4, "Late Layer, Early Head")
     ],
     "google/gemma-2-9b-it": [
-        (16, 1, "ToM Suppressor"),
-        (23, 5, "Terminal Head")
+        (1, 4, "Early Layer, Early Head"),
+        (33, 15, "Late Layer, Late Head")
     ],
     "Qwen/Qwen2.5-14B-Instruct": [
-        (16, 1, "ToM Suppressor"),
-        (23, 5, "Terminal Head")
+        (43, 27, "Late Layer, Late Head"),
+        (49, 9, "Late Layer, Late Head")
     ],
 }
 

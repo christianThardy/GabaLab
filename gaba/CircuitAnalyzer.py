@@ -2810,16 +2810,16 @@ class CircuitAnalyzer:
                 # Default to some common models with reasonable defaults
                 model_specs = {
                     "EleutherAI/gpt-neo-1.3B": [
-                        (10, 8, "ToM Suppressor"),
-                        (22, 9, "Terminal Head")
+                        (10, 8, "Late Layer, Late Head"),
+                        (22, 9, "Late Layer, Late, Head")
                     ],
                     "EleutherAI/pythia-1.4b": [
-                        (16, 10, "ToM Suppressor"),
-                        (28, 15, "Terminal Head")
+                        (16, 10, "Late Layer, Late Head"),
+                        (28, 15, "Late Layer, Late Head")
                     ],
                     "facebook/opt-1.3b": [
-                        (12, 6, "ToM Suppressor"),
-                        (20, 8, "Terminal Head")
+                        (12, 6, "Late Layer, Late Head"),
+                        (20, 8, "Late Layer, Late Head")
                     ]
                 }
 

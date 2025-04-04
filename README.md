@@ -21,7 +21,7 @@ pio.renderers.default = "notebook"
 # Initialize the analyzer with your model, prompt, and answer tokens
 analyzer = CircuitAnalyzer(model, prompt, answer_tokens)
 
-# Define model-layer-head specifications
+# Define model specifications
 # Key values are a list of tuples which represent:
 # (layer, head, description)
 model_specs = {

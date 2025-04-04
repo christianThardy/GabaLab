@@ -1,6 +1,6 @@
 # GabaLab 🪫
 
-GabaLab is a toolkit built on top of <a href="https://github.com/TransformerLensOrg/TransformerLens" title="TransformerLens" rel="nofollow">transformer-lens</a> for weights and activation-based interpretability of internal suppression circuits in transformer models. It's primary focuses are:
+GabaLab is a toolkit built on top of <a href="https://github.com/TransformerLensOrg/TransformerLens" title="TransformerLens" rel="nofollow">transformer-lens</a> for quick weights and activation-based interpretability of internal suppression circuits in transformer models. It's primary focuses are:
 
 - Eigenvalue spectrum analysis to investigate the eigenvalue distribution of OV circuits to get insight into underlying attention mechanism dynamics.
 

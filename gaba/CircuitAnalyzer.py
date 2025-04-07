@@ -2043,7 +2043,7 @@ class CircuitAnalyzer:
         Returns:
             The modified class
         """
-        # Add all the methods from OVCircuitAnalyzer
+        # Add all the methods from CircuitAnalyzer
         setattr(CircuitAnalyzer, 'compute_ov_matrix', compute_ov_matrix)
         setattr(CircuitAnalyzer, 'analyze_eigenvalue_spectrum', analyze_eigenvalue_spectrum)
         setattr(CircuitAnalyzer, 'visualize_eigenvalue_spectrum', visualize_eigenvalue_spectrum)

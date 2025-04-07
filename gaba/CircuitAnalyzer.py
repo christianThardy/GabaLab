@@ -2032,26 +2032,26 @@ class CircuitAnalyzer:
         print("\nDebugging complete.")
         return
 
-    def extend_analyzer_with_eigenvalue_methods(OVQKAnalyzer):
+    def extend_analyzer_with_eigenvalue_methods(CircuitAnalyzer):
         """
-        Extend the OVQKAnalyzer class with eigenvalue decomposition methods.
+        Extend the CircuitAnalyzer class with eigenvalue decomposition methods.
         This uses Python's class modification at runtime.
 
         Args:
-            OVQKAnalyzer: The class to extend
+            CircuitAnalyzer: The class to extend
 
         Returns:
             The modified class
         """
         # Add all the methods from OVCircuitAnalyzer
-        setattr(OVQKAnalyzer, 'compute_ov_matrix', compute_ov_matrix)
-        setattr(OVQKAnalyzer, 'analyze_eigenvalue_spectrum', analyze_eigenvalue_spectrum)
-        setattr(OVQKAnalyzer, 'visualize_eigenvalue_spectrum', visualize_eigenvalue_spectrum)
-        setattr(OVQKAnalyzer, 'compare_eigenvalue_distributions', compare_eigenvalue_distributions)
-        setattr(OVQKAnalyzer, 'track_eigenvalue_flow', track_eigenvalue_flow)
-        setattr(OVQKAnalyzer, 'analyze_token_representation_dimensionality', analyze_token_representation_dimensionality)
+        setattr(CircuitAnalyzer, 'compute_ov_matrix', compute_ov_matrix)
+        setattr(CircuitAnalyzer, 'analyze_eigenvalue_spectrum', analyze_eigenvalue_spectrum)
+        setattr(CircuitAnalyzer, 'visualize_eigenvalue_spectrum', visualize_eigenvalue_spectrum)
+        setattr(CircuitAnalyzer, 'compare_eigenvalue_distributions', compare_eigenvalue_distributions)
+        setattr(CircuitAnalyzer, 'track_eigenvalue_flow', track_eigenvalue_flow)
+        setattr(CircuitAnalyzer, 'analyze_token_representation_dimensionality', analyze_token_representation_dimensionality)
 
-        return OVQKAnalyzer
+        return CircuitAnalyzer
 
     def run_component_decomposition_analysis(self, tokens, layer, head, answer_tokens=None):
         """
@@ -2784,7 +2784,7 @@ class CircuitAnalyzer:
             "raw_results": results
         }
 
-    # Method to add to the OVQKAnalyzer class
+    # Method to add to the CircuitAnalyzer class
     def run_cross_model_eigenvalue_comparison(self, model_specs=None, use_relative_positions=False, relative_positions=None):
         """
         Compare eigenvalue distributions across different model architectures.
@@ -4110,7 +4110,7 @@ class CircuitAnalyzer:
                 tokens = model.to_tokens(prompt, prepend_bos=True)
 
                 # Create analyzer for this model
-                model_analyzer = OVQKAnalyzer(model)
+                model_analyzer = CircuitAnalyzer(model)
 
                 # Determine layer range for this model
                 if layer_ranges and model_name in layer_ranges:
@@ -4318,7 +4318,7 @@ class CircuitAnalyzer:
                 tokens = model.to_tokens(prompt, prepend_bos=True)
 
                 # Create analyzer for this model
-                model_analyzer = OVQKAnalyzer(model)
+                model_analyzer = CircuitAnalyzer(model)
 
                 # Determine heads to analyze
                 heads_to_analyze = []

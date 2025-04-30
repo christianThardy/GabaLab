@@ -107,7 +107,7 @@ class AlignmentSuppressionDetector:
             # Provide detailed error for debugging
             raise ValueError(f"Incompatible tensor dimensions: v={v.shape}, W_O={W_O.shape}")
 
-    # ==================== PROMPTING & DATA METHODS ====================
+    # PROMPTING & DATA METHODS
     def create_user_prompt(self, request: str, is_free_tier: bool) -> str:
         """
         Creates the user prompt with tier tag and compliance instruction.

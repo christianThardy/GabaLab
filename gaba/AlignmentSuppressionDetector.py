@@ -185,7 +185,7 @@ class AlignmentSuppressionDetector:
             for _ in range(max_new_tokens):
                 # Check if there's room for one more token.
                 if current_input.shape[1] >= self.model.cfg.n_ctx:
-                    break  # Should not occur due to our truncation, but a safeguard.
+                    break  # Should not occur due to truncation, but a safeguard.
     
                 with torch.no_grad():
                     logits = self.model(current_input)
